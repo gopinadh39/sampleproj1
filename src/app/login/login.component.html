@@ -1,0 +1,23 @@
+<div class="login">
+        <div class="login-screen">
+            <div class="app-title">
+                <h1>Login</h1>
+            </div>
+
+            <div class="login-form">
+            	 <form name="loginform" >
+	                <div class="control-group">
+	                <input type="text" class="login-field" [(ngModel)]="login.username" name="username" placeholder="Username" id="login-name">
+	                </div>
+
+	                <div class="control-group">
+	                <input type="password" [(ngModel)]="login.password" name="password" class="login-field" placeholder="Password" id="login-pass">
+	                </div>
+	                <p *ngIf="hint">{{hint}}</p>
+
+	                <button class="btn btn-primary btn-large btn-block" name="submit" 
+	                (click)="logIn()">Submit</button>
+                 </form>
+            </div>
+        </div>
+    </div>
